@@ -94,6 +94,7 @@ namespace Institut_Ashralite_Adm.Controllers
         // POST: INDIVIDUs/Edit/5
         // Afin de déjouer les attaques par sur-validation, activez les propriétés spécifiques que vous voulez lier. Pour 
         // plus de détails, voir  https://go.microsoft.com/fwlink/?LinkId=317598.
+        // New commentaire
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ID,ID_CIVILITE,ID_METIER,NOM,PRENOM,EMAIL,PORTABLE,COMMENTAIRE,ACTIF,DATE_ACTIF,UTILISATEUR_CREATION,UTILISATEUR_MODIFICATION,DATE_CREATION,DATE_MODIFICATION,SEMAINE")] INDIVIDU iNDIVIDU)
