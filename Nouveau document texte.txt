@@ -1,0 +1,6 @@
+
+
+Dans Presence 
+Ussul 1	  ===> ID_COURS = 8
+Tawhid 1 ===> ID_COURS = 26
+CORAN ====>  ID_COURS = 30

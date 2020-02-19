@@ -1,0 +1,614 @@
+﻿@model IEnumerable<Institut_Ashralite_Adm.Models.PRESENCE>
+
+<!DOCTYPE html>
+
+@*<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+    </head>
+    <body>
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.PRESENT)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.COMMENTAIRE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ACTIF)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DATE_ACTIF)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UTILISATEUR_CREATION)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UTILISATEUR_MODIFICATION)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DATE_CREATION)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DATE_MODIFICATION)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SEMAINE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.COURS.LIBELLE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.INDIVIDU.NOM)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PRESENT)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.COMMENTAIRE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ACTIF)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DATE_ACTIF)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UTILISATEUR_CREATION)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UTILISATEUR_MODIFICATION)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DATE_CREATION)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DATE_MODIFICATION)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SEMAINE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.COURS.LIBELLE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.INDIVIDU.NOM)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </body>
+    </html>
+
+
+
+
+
+    *--------------------------------------*
+    <table class="table">
+        <tr>
+
+            <th>
+                S1
+
+            </th>
+            <th>
+                s2
+
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.INDIVIDU.NOM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PRESENT)
+                    <input type="button" value="Create" onclick="location.href='@Url.Action("GetUserRoles", "PRESENCEs" ,new { id = 19 })'" />
+
+                </td>
+
+            </tr>
+        }
+
+
+
+
+
+    </table>*@
+
+
+
+
+
+<style>
+    .table td {
+        width: 25%;
+    }
+
+    .w100 {
+        width: 100px;
+    }
+
+    .margin10 {
+        margin-left: 10px;
+    }
+</style>
+
+@section scripts{
+    <script src="https://www.appelsiini.net/download/jquery.jeditable.js"></script>
+    <script>
+        //        window.onload = myFunction;
+
+        //function myFunction() {
+        //  document.getElementById(ViewBag.Moi).selected = "true";
+        //}
+
+
+
+        function init() {
+            $('.click').editable('/PRESENCEs/saveuser', {
+                submitdata: function () {
+                    return {
+                        id: $(this).data('id'),
+                        PropertyName: $(this).data('propertyname')
+                    }
+                },
+                callback: function (value, settings) {
+                    var jsonData = $.parseJSON(value);
+                    if (jsonData.status) {
+                        if (jsonData.value) {
+                            $(this).addClass('btn btn-success');
+                        }
+                        else {
+                            $(this).addClass('btn btn-danger');
+                        }
+
+                        $(this).text(jsonData.message);
+                    }
+                    else {
+                        $(this).text(oldValue);
+                    }
+                }
+            })
+
+
+        }
+
+
+
+
+
+
+
+        $(document).ready(function () {
+            var oldValue = '';
+            $('.edit').editable('/PRESENCEs/saveuser', {
+                cssclass: 'jeditForm',
+                tooltip: 'click to edit me...', //info - bulle
+                width: 'none',
+                height: 'none',
+                //submit: 'ok',
+                onsubmit: function (settings, original) {
+                    oldValue = original.revert;
+
+                },
+                submitdata: function () {
+                    return {
+                        id: $(this).data('id'),
+                        PropertyName: $(this).data('propertyname')
+                    }
+                },
+                callback: function (value, settings) {
+                    var jsonData = $.parseJSON(value);
+                    if (jsonData.status) {
+                        if (jsonData.value) {
+                            $(this).addClass('btn btn-success');
+                        }
+                        else {
+                            $(this).addClass('btn btn-danger');
+                        }
+
+                        $(this).text(jsonData.value);
+                    }
+                    else {
+                        $(this).text(oldValue);
+                    }
+                }
+            })
+
+
+            $('.click').editable('/PRESENCEs/saveuser', {
+                submitdata: function () {
+                    return {
+                        id: $(this).data('id'),
+                        PropertyName: $(this).data('propertyname')
+                    }
+                },
+                callback: function (value, settings) {
+                    var jsonData = $.parseJSON(value);
+                    if (jsonData.status) {
+                        if (jsonData.value) {
+                            $(this).addClass('btn btn-success');
+                        }
+                        else {
+                            $(this).addClass('btn btn-danger');
+                        }
+
+                        $(this).text(jsonData.message);
+                    }
+                    else {
+                        $(this).text(oldValue);
+                    }
+                }
+            })
+
+
+
+
+
+
+            $('.Proc').editable('/PRESENCEs/Proc', {
+                cssclass: 'jeditForm',
+                tooltip: 'click to edit me...',
+                width: 'none',
+                height: 'none',
+                submit: 'ok',
+                //type: 'select',
+                //loadurl: '/PRESENCEs/GetUserRoles',
+                //loaddata: function () {
+                //    return { id: $(this).data('id') }
+                //},
+                //onsubmit: function (settings, original) {
+                //    oldValue = original.revert;
+                //},
+                submitdata: function () {
+                    return {
+                        id: $(this).data('id'),
+                        PropertyName: $(this).data('propertyname')
+                    }
+                },
+                callback: function (value, settings) {
+
+                    var jsonData = $.parseJSON(value);
+                    if (jsonData.value) {
+                        $(this).removeClass("btn btn-danger");
+                        $(this).addClass('btn btn-success');
+                    }
+                    else {
+                        $(this).removeClass("btn btn-success");
+                        $(this).addClass('btn btn-danger');
+                    }
+
+                    if (jsonData.status) {
+                        $(this).text(jsonData.message);
+                    }
+                    else {
+                        $(this).text(oldValue);
+                    }
+                }
+            })
+
+            $('.editSelect').editable('/PRESENCEs/saveuser', {
+                cssclass: 'jeditForm',
+                tooltip: 'click to edit me...',
+                width: 'none',
+                height: 'none',
+                submit: 'ok',
+                type: 'select',
+                loadurl: '/PRESENCEs/GetUserRoles',
+                loaddata: function () {
+                    return { id: $(this).data('id') }
+                },
+                onsubmit: function (settings, original) {
+                    oldValue = original.revert;
+                },
+                submitdata: function () {
+                    return {
+                        id: $(this).data('id'),
+                        PropertyName: $(this).data('propertyname')
+                    }
+                },
+                callback: function (value, settings) {
+
+                    var jsonData = $.parseJSON(value);
+                    if (jsonData.value) {
+                        $(this).removeClass("btn btn-danger");
+                        $(this).addClass('btn btn-success');
+                    }
+                    else {
+                        $(this).removeClass("btn btn-success");
+                        $(this).addClass('btn btn-danger');
+                    }
+
+                    if (jsonData.status) {
+                        $(this).text(jsonData.message);
+                    }
+                    else {
+                        $(this).text(oldValue);
+                    }
+                }
+            })
+
+            $('.editSelect').click(function () {
+                $('select', this).addClass('form-control pull-left w100  ');
+                $('button', this).addClass('btn btn-sm btn btn-success margin10')
+            })
+        })
+
+
+
+
+
+
+
+        function init(value, settings) {
+
+            var jsonData = $.parseJSON(value);
+            if (jsonData.value) {
+                $(this).removeClass("btn btn-danger");
+                $(this).addClass('btn btn-success');
+            }
+            else {
+                $(this).removeClass("btn btn-success");
+                $(this).addClass('btn btn-danger');
+            }
+
+            if (jsonData.status) {
+                $(this).text(jsonData.message);
+            }
+            else {
+                $(this).text(oldValue);
+            }
+        }
+
+
+
+
+        //Show The Popup Modal For DeleteComfirmation
+        var DeleteStudentRecord = function (courId, StudentId) {
+
+            //  $("tr").remove();
+            var elem = document.getElementById(StudentId);
+            elem.parentElement.remove();
+            $.ajax({
+                type: "POST",
+                dataType: "Json",
+                url: "/PRESENCEs/Proc",
+                data: {
+                    id_matiere: courId,
+                    id_eleve: StudentId,
+                },
+                success: function (result) {
+                    $("#deleteconfirmation").modal("hide");
+                    $(".row_" + stuid).remove();
+                    window.location.href = "/utilisateurs/index";
+                }
+            })
+
+        }
+
+
+
+
+        //var ConfirmDelete = function (visit_id) {
+        //    var StuId = $("#StuId").val();
+        //    $.ajax({
+        //        type: "POST",
+        //        url: "/Utilisateurs/DeleteStudentRecord?id=" + StuId,
+        //        success: function (result) {
+        //            $("#DeleteConfirmation").modal("hide");
+        //            $(".row_" + StuId).remove();
+        //            window.location.href = "/Utilisateurs/index";
+        //        }
+        //    })
+        // }
+
+
+
+    </script>
+}
+
+
+ Choisir un Mois:
+
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+        @ViewBag.MOISS
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li selected="selected">
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 1 })">Janvier</a>
+        </li>
+
+        <li selected>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 2 })">Février</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 3 })">Mars</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 4 })">Avril</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 5 })">Mais</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 6 })">Juin</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 7 })">Juillet</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 8 })">Aout</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 9 })">Septembre</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 10 })">Octobre</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB =11})">Novembre</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 12 })">Decembre</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+@*<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+        Choisir le Mois
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li selected="selected">
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 1 })">Janvier</a>
+        </li>
+
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 2 })">Février</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 3 })">Mars</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 4 })">Avril</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 5 })">Mais</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 6 })">Juin</a>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 7 })">Juillet</a>
+        </li>
+    </ul>
+</div>*@
+
+
+<p>
+    Matiere : @ViewBag.ThisMatiere
+
+    @*@Model.First().COURS.LIBELLE*@
+
+
+</p>
+@*Model.First().COURS.LIBELLE != null &&*@
+
+<div style="float:left;" id="div2">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+
+                <th scope="col">Nom</th>
+                <th scope="col">Semaine 1</th>
+                <th scope="col">Semaine 2</th>
+                <th scope="col">Semaine 3</th>
+                <th scope="col">Semaine 4</th>
+                <th scope="col">Désinscrir</th>
+            </tr>
+        </thead>
+        <style>
+            .table td {
+                width: 20%;
+            }
+        </style>
+
+        @foreach (var Nom in ViewBag.Matiere)
+        {
+            var P = Model.Where(p => p.INDIVIDU.NOM == @Nom);
+            int count = 0;
+            <tr>
+                <td>
+                    @Nom
+
+                </td>
+
+
+                @foreach (var item in P)
+                {
+                    count++;
+
+                    <td>
+
+
+                        @if (item.PRESENT == true)
+                        {
+                            <button data-id="@item.ID" data-propertyname="PRESENT2" type="button" class="editSelect btn btn-success">Présent</button>
+                        }
+                        else
+                        {
+                            <button data-id="@item.ID" data-propertyname="PRESENT2" type="button" class="editSelect btn btn-danger">Absent</button>
+                        }
+
+                    </td>
+                    if (count == 4)
+                    {
+
+                        <td id="@item.ID_ELEVE">
+                            @*<button data-id="@item.ID_ELEVE" data-propertyname="@item.ID_COURS" type="button" class="Proc btn btn-danger">Désinscrir de la matière</button>*@
+                            @*@Html.ActionLink("Désinscrir de la matière", "Proc", "PRESENCEs", new { id_matiere = @item.ID_COURS, id_eleve = @item.ID_ELEVE }, new { @class = "btn btn-danger" })*@
+                            <a href='#' class='btn btn-danger' onclick='DeleteStudentRecord(@item.ID_COURS,@item.ID_ELEVE)'><span class='glyphicon glyphicon-trash'></span></a>
+
+                        </td>
+
+                    }
+
+                }
+
+            </tr>
+
+
+        }
+
+    </table>
+</div>
+
+
+@*@foreach (var item in ViewBag.Matiere)
+
+    {
+
+        @item
+    }*@
+
+
+@*foreach (var Matiere in ViewData["Matiere"] as IList<WebApplication6.Models.INSCRIPTION>
+    )
+    {
+    <li> @Html.ActionLink(Matiere.ABBREVIATION, "ParMatiere", "INSCRIPTIONs", new { M = Matiere.ID }, new { @class = "btn btn-primary", @style = "color:white" }) </li>
+
+    <li> @Html.DisplayFor(modelItem => Matiere.INDIVIDU.NOM)</li>
+
+        }*@

@@ -1,0 +1,378 @@
+﻿@model IEnumerable<Institut_Ashralite_Adm.Models.INDIVIDU>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Ajouter un professeur", "Create", new { id = 1, titre = "Ajouter un professeur" },new { @class = "btn btn-success" })
+        @*@Html.ActionLink("+ Ajouter un professeur", "Create", "INDIVIDUs", new { id = 1, titre = "Ajouter un professeur" }, new { @class = "btn btn-success", @style = "float: right;" })*@
+        @*@Html.ActionLink("Ajouter un éléve", "CreateapartirMatiere", "INSCRIPTIONs", new { id = 2, titre = "Ajouter un eleve" }, new { @class = "btn btn-success" })*@
+
+        @Html.ActionLink("+Ajouter un eleve", "Create", new { id = 2, titre = "Ajouter un eleve" },new { @class = "btn btn-success" })
+    </p>
+    @*<table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID_METIER)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NOM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PRENOM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EMAIL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PORTABLE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.COMMENTAIRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACTIF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DATE_ACTIF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UTILISATEUR_CREATION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UTILISATEUR_MODIFICATION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DATE_CREATION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DATE_MODIFICATION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SEMAINE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.REF_CIVILITE.ABBREVIATION)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_METIER)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NOM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PRENOM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EMAIL)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PORTABLE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.COMMENTAIRE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ACTIF)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DATE_ACTIF)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UTILISATEUR_CREATION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UTILISATEUR_MODIFICATION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DATE_CREATION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DATE_MODIFICATION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SEMAINE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REF_CIVILITE.ABBREVIATION)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>*@
+</body>
+</html>
+
+
+
+
+
+
+
+<style>
+    .filterable {
+        margin-top: 15px;
+    }
+
+        .filterable .panel-heading .pull-right {
+            margin-top: -20px;
+        }
+
+        .filterable .filters input[disabled] {
+            background-color: transparent;
+            border: none;
+            cursor: auto;
+            box-shadow: none;
+            padding: 0;
+            height: auto;
+        }
+
+            .filterable .filters input[disabled]::-webkit-input-placeholder {
+                color: #333;
+            }
+
+            .filterable .filters input[disabled]::-moz-placeholder {
+                color: #333;
+            }
+
+            .filterable .filters input[disabled]:-ms-input-placeholder {
+                color: #333;
+            }
+</style>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <h3>Professeurs de l'institut</h3>
+    <hr>
+    <div class="row">
+        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Enseignant</h3>
+                <div class="pull-right">
+                    <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Recherche</button>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr class="filters">
+                        @*<th><input type="text" class="form-control" placeholder="#" disabled></th>*@
+                        <th><input type="text" class="form-control" placeholder="NOM" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="PRENOM" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="EMAIL" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Telephone" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Matiere" disabled></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in ViewData["COURS"] as IList<Institut_Ashralite_Adm.Models.COURS>)
+                    {
+                    <tr>
+                        @*<td>
+            @Html.DisplayFor(modelItem => item.ID_METIER)
+        </td>*@
+                        <td>
+                            @Html.DisplayFor(modelItem => item.INDIVIDU.NOM)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.INDIVIDU.PRENOM)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.INDIVIDU.EMAIL)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.INDIVIDU.PORTABLE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LIBELLE)
+                        </td>
+
+                        @*<td>
+            @Html.DisplayFor(modelItem => item.COMMENTAIRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACTIF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DATE_ACTIF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UTILISATEUR_CREATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UTILISATEUR_MODIFICATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DATE_CREATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DATE_MODIFICATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SEMAINE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REF_CIVILITE.ABBREVIATION)
+        </td>*@
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                        </td>
+                    </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h3>Eleves de l'institut</h3>
+    <hr>
+    <div class="row">
+        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Eleves</h3>
+                <div class="pull-right">
+                    <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Recherche</button>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr class="filters">
+                        @*<th><input type="text" class="form-control" placeholder="#" disabled></th>*@
+                        <th><input type="text" class="form-control" placeholder="NOM" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="PRENOM" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="EMAIL" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Telephone" disabled></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Where(m => m.ID_METIER == 2))
+                    {
+                        <tr>
+                            @*<td>
+                                    @Html.DisplayFor(modelItem => item.ID_METIER)
+                                </td>*@
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NOM)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PRENOM)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EMAIL)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PORTABLE)
+                            </td>
+                            @*<td>
+                                    @Html.DisplayFor(modelItem => item.COMMENTAIRE)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ACTIF)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DATE_ACTIF)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UTILISATEUR_CREATION)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UTILISATEUR_MODIFICATION)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DATE_CREATION)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DATE_MODIFICATION)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.SEMAINE)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.REF_CIVILITE.ABBREVIATION)
+                                </td>*@
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    /*
+ Please consider that the JS part isn't production ready at all, I just code it to show the concept of merging filters and titles together !
+ */
+    $(document).ready(function () {
+        $('.filterable .btn-filter').click(function () {
+            var $panel = $(this).parents('.filterable'),
+                $filters = $panel.find('.filters input'),
+                $tbody = $panel.find('.table tbody');
+            if ($filters.prop('disabled') == true) {
+                $filters.prop('disabled', false);
+                $filters.first().focus();
+            } else {
+                $filters.val('').prop('disabled', true);
+                $tbody.find('.no-result').remove();
+                $tbody.find('tr').show();
+            }
+        });
+
+        $('.filterable .filters input').keyup(function (e) {
+            /* Ignore tab key */
+            var code = e.keyCode || e.which;
+            if (code == '9') return;
+            /* Useful DOM data and selectors */
+            var $input = $(this),
+                inputContent = $input.val().toLowerCase(),
+                $panel = $input.parents('.filterable'),
+                column = $panel.find('.filters th').index($input.parents('th')),
+                $table = $panel.find('.table'),
+                $rows = $table.find('tbody tr');
+            /* Dirtiest filter function ever ;) */
+            var $filteredRows = $rows.filter(function () {
+                var value = $(this).find('td').eq(column).text().toLowerCase();
+                return value.indexOf(inputContent) === -1;
+            });
+            /* Clean previous no-result if exist */
+            $table.find('tbody .no-result').remove();
+            /* Show all rows, hide filtered ones (never do that outside of a demo ! xD) */
+            $rows.show();
+            $filteredRows.hide();
+            /* Prepend no-result row if all rows are filtered */
+            if ($filteredRows.length === $rows.length) {
+                $table.find('tbody').prepend($('<tr class="no-result text-center"><td colspan="' + $table.find('.filters th').length + '">No result found</td></tr>'));
+            }
+        });
+    });
+</script>

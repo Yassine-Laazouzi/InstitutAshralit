@@ -1,0 +1,252 @@
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Institut_Ashralite_Adm.dll.config
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Institut_Ashralite_Adm.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Institut_Ashralite_Adm.pdb
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\csc.exe
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\csc.exe.config
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\csc.rsp
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\csi.exe
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\csi.exe.config
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\csi.rsp
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.AppContext.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Console.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.IO.Compression.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Net.Http.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Net.Sockets.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.ValueTuple.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Xml.XPath.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\vbc.exe
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\vbc.exe.config
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\vbc.rsp
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\VBCSCompiler.exe
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Antlr3.Runtime.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\EntityFramework.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\EntityFramework.SqlServer.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Newtonsoft.Json.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Owin.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Helpers.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Mvc.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Optimization.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Razor.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.WebPages.Deployment.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.WebPages.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.WebPages.Razor.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\WebGrease.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Helpers.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Mvc.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Optimization.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Razor.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.WebPages.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.WebPages.Deployment.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.WebPages.Razor.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Newtonsoft.Json.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Antlr3.Runtime.pdb
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\EntityFramework.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\EntityFramework.SqlServer.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.Razor.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\EntityFramework.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.Security.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\obj\Debug\Institut_Ashralite_Adm.csprojAssemblyReference.cache
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\obj\Debug\Institut_Ashralite_Adm.csproj.CopyComplete
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\obj\Debug\Institut_Ashralite_Adm.dll
+C:\Users\yassi\source\repos\Institut_Ashralite_Adm\Institut_Ashralite_Adm\obj\Debug\Institut_Ashralite_Adm.pdb
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Institut_Ashralite_Adm.dll.config
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Institut_Ashralite_Adm.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Institut_Ashralite_Adm.pdb
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\csc.exe
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\csc.exe.config
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\csc.rsp
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\csi.exe
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\csi.exe.config
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\csi.rsp
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.AppContext.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Console.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.IO.Compression.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Net.Http.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Net.Sockets.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.ValueTuple.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Xml.XPath.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\vbc.exe
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\vbc.exe.config
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\vbc.rsp
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\VBCSCompiler.exe
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Antlr3.Runtime.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\EntityFramework.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\EntityFramework.SqlServer.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Newtonsoft.Json.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Owin.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Helpers.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Mvc.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Optimization.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Razor.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.WebPages.Deployment.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.WebPages.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.WebPages.Razor.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\WebGrease.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Helpers.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Mvc.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Optimization.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.Razor.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.WebPages.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.WebPages.Deployment.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\System.Web.WebPages.Razor.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Newtonsoft.Json.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Antlr3.Runtime.pdb
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\EntityFramework.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\EntityFramework.SqlServer.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.Razor.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\EntityFramework.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.Security.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\obj\Debug\Institut_Ashralite_Adm.csprojAssemblyReference.cache
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\obj\Debug\Institut_Ashralite_Adm.csproj.CopyComplete
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\obj\Debug\Institut_Ashralite_Adm.dll
+C:\Users\yassi\Documents\NEW apli\Institut_Ashralite_Adm\Institut_Ashralite_Adm\obj\Debug\Institut_Ashralite_Adm.pdb

@@ -1,0 +1,204 @@
+﻿@model IEnumerable<Institut_Ashralite_Adm.Models.COURS>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+
+</head>
+<body>
+    <p>
+        @*@Html.ActionLink("+ Ajouter une matière", "Create")
+            <button type="button" class="btn btn-success" style="float: right;">+ Ajouter un professeur</button>*@
+
+        @*@Html.ActionLink("+ Ajouter une matière", new { controller = "MATIEREs", action = "Create" })*@
+
+        @Html.ActionLink(" Ajouter une matière", "Create", "MATIEREs", null, new { @class = "glyphicon-plus btn btn-success" })
+    </p>
+
+    <table class="table">
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.LIBELLE)*@
+                <label for="male">Matière</label>
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.DATE_COURS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HEURE_DEBUT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HEURE_FIN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COMMENTAIRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACTIF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DATE_ACTIF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UTILISATEUR_CREATION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UTILISATEUR_MODIFICATION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DATE_CREATION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DATE_MODIFICATION)
+        </th>*@
+            <th>
+                @*@Html.DisplayNameFor(model => model.INDIVIDU.NOM)*@
+                <label for="male">Enseignant</label>
+            </th>
+            <th>
+                <label for="male">Suivi Présence</label>
+
+            </th>
+
+            <th>
+                <label for="male">Ajouter un éléve</label>
+
+            </th>
+           
+        </tr>
+
+        @foreach (var item in Model)
+        {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LIBELLE)
+        </td>
+       @*<td>
+            @Html.DisplayFor(modelItem => item.ID)
+        </td>*@
+         @*<td>
+            @Html.DisplayFor(modelItem => item.HEURE_DEBUT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HEURE_FIN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COMMENTAIRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACTIF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DATE_ACTIF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UTILISATEUR_CREATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UTILISATEUR_MODIFICATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DATE_CREATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DATE_MODIFICATION)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.INDIVIDU.NOM)
+        </td>
+        <td>
+
+
+            @Html.ActionLink("Faire l'apelle", "Index", "PRESENCEs", new { id = item.ID_MATIERE }, new { @class = "btn btn-success" })
+
+
+
+        </td>
+        <td>
+
+
+            @Html.ActionLink("Ajouter un éléve", "CreateapartirMatiere", "INSCRIPTIONs", new { id = item.ID_MATIERE, libele = item.LIBELLE }, new { @class = "btn btn-success" })
+
+
+            @*@Html.ActionLink("Ajouter un professeur", "Create", new { id = 1, titre = "Ajouter un professeur" })
+            @Html.ActionLink("Ajouter un eleve", "Create", new { id = 2, titre = "Ajouter un eleve" })*@
+
+        </td>
+        
+        <td id="@item.ID">
+            <a href='#' class='btn btn-danger' onclick='DeleteStudentRecord(@item.ID)'><span class='glyphicon glyphicon-trash'></span></a>
+
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+        </td>
+    </tr>
+        }
+
+    </table>
+</body>
+</html>
+
+
+
+
+<script>
+
+
+     var DeleteStudentRecord = function (id) {
+
+            //  $("tr").remove();
+            var elem = document.getElementById(id);
+            elem.parentElement.remove();
+            $.ajax({
+                type: "POST",
+                dataType: "Json",
+                url: "/COURS/Proc",
+                data: {
+                    id_matiere: id
+                },
+                success: function (result) {
+                    $("#deleteconfirmation").modal("hide");
+                    $(".row_" + stuid).remove();
+                    
+                }
+            })
+
+        }
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

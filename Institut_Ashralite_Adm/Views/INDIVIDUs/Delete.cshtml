@@ -1,0 +1,141 @@
+﻿@model Institut_Ashralite_Adm.Models.INDIVIDU
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>INDIVIDU</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.ID_METIER)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ID_METIER)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.NOM)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NOM)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PRENOM)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PRENOM)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.EMAIL)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.EMAIL)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PORTABLE)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PORTABLE)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.COMMENTAIRE)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.COMMENTAIRE)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ACTIF)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ACTIF)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DATE_ACTIF)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DATE_ACTIF)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.UTILISATEUR_CREATION)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.UTILISATEUR_CREATION)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.UTILISATEUR_MODIFICATION)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.UTILISATEUR_MODIFICATION)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DATE_CREATION)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DATE_CREATION)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DATE_MODIFICATION)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DATE_MODIFICATION)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.SEMAINE)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SEMAINE)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.REF_CIVILITE.ABBREVIATION)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.REF_CIVILITE.ABBREVIATION)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

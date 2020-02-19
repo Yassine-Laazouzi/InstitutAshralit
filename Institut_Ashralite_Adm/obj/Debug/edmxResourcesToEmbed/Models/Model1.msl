@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Institut_Ashralite_ADMModelStoreContainer" CdmEntityContainer="Institut_Ashralite_ADMEntities">
+    <EntitySetMapping Name="COURS">
+      <EntityTypeMapping TypeName="Institut_Ashralite_ADMModel.COURS">
+        <MappingFragment StoreEntitySet="COURS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_MATIERE" ColumnName="ID_MATIERE" />
+          <ScalarProperty Name="ID_ENCADREUR" ColumnName="ID_ENCADREUR" />
+          <ScalarProperty Name="LIBELLE" ColumnName="LIBELLE" />
+          <ScalarProperty Name="DATE_COURS" ColumnName="DATE_COURS" />
+          <ScalarProperty Name="HEURE_DEBUT" ColumnName="HEURE_DEBUT" />
+          <ScalarProperty Name="HEURE_FIN" ColumnName="HEURE_FIN" />
+          <ScalarProperty Name="COMMENTAIRE" ColumnName="COMMENTAIRE" />
+          <ScalarProperty Name="ACTIF" ColumnName="ACTIF" />
+          <ScalarProperty Name="DATE_ACTIF" ColumnName="DATE_ACTIF" />
+          <ScalarProperty Name="UTILISATEUR_CREATION" ColumnName="UTILISATEUR_CREATION" />
+          <ScalarProperty Name="UTILISATEUR_MODIFICATION" ColumnName="UTILISATEUR_MODIFICATION" />
+          <ScalarProperty Name="DATE_CREATION" ColumnName="DATE_CREATION" />
+          <ScalarProperty Name="DATE_MODIFICATION" ColumnName="DATE_MODIFICATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INDIVIDU">
+      <EntityTypeMapping TypeName="Institut_Ashralite_ADMModel.INDIVIDU">
+        <MappingFragment StoreEntitySet="INDIVIDU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_CIVILITE" ColumnName="ID_CIVILITE" />
+          <ScalarProperty Name="ID_METIER" ColumnName="ID_METIER" />
+          <ScalarProperty Name="NOM" ColumnName="NOM" />
+          <ScalarProperty Name="PRENOM" ColumnName="PRENOM" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PORTABLE" ColumnName="PORTABLE" />
+          <ScalarProperty Name="COMMENTAIRE" ColumnName="COMMENTAIRE" />
+          <ScalarProperty Name="ACTIF" ColumnName="ACTIF" />
+          <ScalarProperty Name="DATE_ACTIF" ColumnName="DATE_ACTIF" />
+          <ScalarProperty Name="UTILISATEUR_CREATION" ColumnName="UTILISATEUR_CREATION" />
+          <ScalarProperty Name="UTILISATEUR_MODIFICATION" ColumnName="UTILISATEUR_MODIFICATION" />
+          <ScalarProperty Name="DATE_CREATION" ColumnName="DATE_CREATION" />
+          <ScalarProperty Name="DATE_MODIFICATION" ColumnName="DATE_MODIFICATION" />
+          <ScalarProperty Name="SEMAINE" ColumnName="SEMAINE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INSCRIPTION">
+      <EntityTypeMapping TypeName="Institut_Ashralite_ADMModel.INSCRIPTION">
+        <MappingFragment StoreEntitySet="INSCRIPTION">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_MATIERE" ColumnName="ID_MATIERE" />
+          <ScalarProperty Name="ID_ELEVE" ColumnName="ID_ELEVE" />
+          <ScalarProperty Name="COMMENTAIRE" ColumnName="COMMENTAIRE" />
+          <ScalarProperty Name="ACTIF" ColumnName="ACTIF" />
+          <ScalarProperty Name="DATE_ACTIF" ColumnName="DATE_ACTIF" />
+          <ScalarProperty Name="UTILISATEUR_CREATION" ColumnName="UTILISATEUR_CREATION" />
+          <ScalarProperty Name="UTILISATEUR_MODIFICATION" ColumnName="UTILISATEUR_MODIFICATION" />
+          <ScalarProperty Name="DATE_CREATION" ColumnName="DATE_CREATION" />
+          <ScalarProperty Name="DATE_MODIFICATION" ColumnName="DATE_MODIFICATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MATIERE">
+      <EntityTypeMapping TypeName="Institut_Ashralite_ADMModel.MATIERE">
+        <MappingFragment StoreEntitySet="MATIERE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ABBREVIATION" ColumnName="ABBREVIATION" />
+          <ScalarProperty Name="LIBELLE" ColumnName="LIBELLE" />
+          <ScalarProperty Name="COMMENTAIRE" ColumnName="COMMENTAIRE" />
+          <ScalarProperty Name="ACTIF" ColumnName="ACTIF" />
+          <ScalarProperty Name="DATE_ACTIF" ColumnName="DATE_ACTIF" />
+          <ScalarProperty Name="UTILISATEUR_CREATION" ColumnName="UTILISATEUR_CREATION" />
+          <ScalarProperty Name="UTILISATEUR_MODIFICATION" ColumnName="UTILISATEUR_MODIFICATION" />
+          <ScalarProperty Name="DATE_CREATION" ColumnName="DATE_CREATION" />
+          <ScalarProperty Name="DATE_MODIFICATION" ColumnName="DATE_MODIFICATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRESENCE">
+      <EntityTypeMapping TypeName="Institut_Ashralite_ADMModel.PRESENCE">
+        <MappingFragment StoreEntitySet="PRESENCE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_COURS" ColumnName="ID_COURS" />
+          <ScalarProperty Name="ID_ELEVE" ColumnName="ID_ELEVE" />
+          <ScalarProperty Name="PRESENT" ColumnName="PRESENT" />
+          <ScalarProperty Name="COMMENTAIRE" ColumnName="COMMENTAIRE" />
+          <ScalarProperty Name="ACTIF" ColumnName="ACTIF" />
+          <ScalarProperty Name="DATE_ACTIF" ColumnName="DATE_ACTIF" />
+          <ScalarProperty Name="UTILISATEUR_CREATION" ColumnName="UTILISATEUR_CREATION" />
+          <ScalarProperty Name="UTILISATEUR_MODIFICATION" ColumnName="UTILISATEUR_MODIFICATION" />
+          <ScalarProperty Name="DATE_CREATION" ColumnName="DATE_CREATION" />
+          <ScalarProperty Name="DATE_MODIFICATION" ColumnName="DATE_MODIFICATION" />
+          <ScalarProperty Name="SEMAINE" ColumnName="SEMAINE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REF_CIVILITE">
+      <EntityTypeMapping TypeName="Institut_Ashralite_ADMModel.REF_CIVILITE">
+        <MappingFragment StoreEntitySet="REF_CIVILITE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ABBREVIATION" ColumnName="ABBREVIATION" />
+          <ScalarProperty Name="LIBELLE" ColumnName="LIBELLE" />
+          <ScalarProperty Name="COMMENTAIRE" ColumnName="COMMENTAIRE" />
+          <ScalarProperty Name="ACTIF" ColumnName="ACTIF" />
+          <ScalarProperty Name="DATE_ACTIF" ColumnName="DATE_ACTIF" />
+          <ScalarProperty Name="UTILISATEUR_CREATION" ColumnName="UTILISATEUR_CREATION" />
+          <ScalarProperty Name="UTILISATEUR_MODIFICATION" ColumnName="UTILISATEUR_MODIFICATION" />
+          <ScalarProperty Name="DATE_CREATION" ColumnName="DATE_CREATION" />
+          <ScalarProperty Name="DATE_MODIFICATION" ColumnName="DATE_MODIFICATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REF_METIER">
+      <EntityTypeMapping TypeName="Institut_Ashralite_ADMModel.REF_METIER">
+        <MappingFragment StoreEntitySet="REF_METIER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ABBREVIATION" ColumnName="ABBREVIATION" />
+          <ScalarProperty Name="LIBELLE" ColumnName="LIBELLE" />
+          <ScalarProperty Name="COMMENTAIRE" ColumnName="COMMENTAIRE" />
+          <ScalarProperty Name="ACTIF" ColumnName="ACTIF" />
+          <ScalarProperty Name="DATE_ACTIF" ColumnName="DATE_ACTIF" />
+          <ScalarProperty Name="UTILISATEUR_CREATION" ColumnName="UTILISATEUR_CREATION" />
+          <ScalarProperty Name="UTILISATEUR_MODIFICATION" ColumnName="UTILISATEUR_MODIFICATION" />
+          <ScalarProperty Name="DATE_CREATION" ColumnName="DATE_CREATION" />
+          <ScalarProperty Name="DATE_MODIFICATION" ColumnName="DATE_MODIFICATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="I_Ligne_Table_Presence" FunctionName="Institut_Ashralite_ADMModel.Store.I_Ligne_Table_Presence" />
+    <FunctionImportMapping FunctionImportName="MAJ_Presence" FunctionName="Institut_Ashralite_ADMModel.Store.I_Ligne_Table_Presence" />
+    <FunctionImportMapping FunctionImportName="I_Ajout_Matiere" FunctionName="Institut_Ashralite_ADMModel.Store.I_Ajout_Matiere" />
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Institut_Ashralite_ADMModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="D_supprimer_eleve_dun_cours" FunctionName="Institut_Ashralite_ADMModel.Store.D_supprimer_eleve_dun_cours" />
+    <FunctionImportMapping FunctionImportName="D_supprimer_Matiere_avec_eleve" FunctionName="Institut_Ashralite_ADMModel.Store.D_supprimer_Matiere_avec_eleve" />
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="Institut_Ashralite_ADMModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Institut_Ashralite_Adm.Models.MATIERE>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ABBREVIATION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LIBELLE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.COMMENTAIRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACTIF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DATE_ACTIF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UTILISATEUR_CREATION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UTILISATEUR_MODIFICATION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DATE_CREATION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DATE_MODIFICATION)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ABBREVIATION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LIBELLE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COMMENTAIRE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACTIF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DATE_ACTIF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UTILISATEUR_CREATION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UTILISATEUR_MODIFICATION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DATE_CREATION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DATE_MODIFICATION)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

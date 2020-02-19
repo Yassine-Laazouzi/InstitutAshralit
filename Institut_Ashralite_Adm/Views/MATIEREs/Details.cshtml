@@ -1,0 +1,95 @@
+﻿@model Institut_Ashralite_Adm.Models.MATIERE
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>MATIERE</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.ABBREVIATION)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ABBREVIATION)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.LIBELLE)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.LIBELLE)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.COMMENTAIRE)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.COMMENTAIRE)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ACTIF)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ACTIF)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DATE_ACTIF)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DATE_ACTIF)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.UTILISATEUR_CREATION)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.UTILISATEUR_CREATION)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.UTILISATEUR_MODIFICATION)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.UTILISATEUR_MODIFICATION)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DATE_CREATION)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DATE_CREATION)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DATE_MODIFICATION)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DATE_MODIFICATION)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
