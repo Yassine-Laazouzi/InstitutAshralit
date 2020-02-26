@@ -94,13 +94,17 @@ namespace Institut_Ashralite_Adm.Controllers
             {
                 db.INSCRIPTION.Add(iNSCRIPTION);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                //return RedirectToAction("Index");
+                return RedirectToAction("Index","COURS");
+
             }
 
             ViewBag.ID_ELEVE = new SelectList(db.INDIVIDU, "ID", "NOM", iNSCRIPTION.ID_ELEVE);
             ViewBag.ID_MATIERE = new SelectList(db.MATIERE, "ID", "ABBREVIATION", iNSCRIPTION.ID_MATIERE);
 
-            return View(iNSCRIPTION);
+            //return View(iNSCRIPTION);
+              return Redirect("COURS/Index"); 
+
         }
 
         // GET: INSCRIPTIONs/Edit/5

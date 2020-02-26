@@ -485,35 +485,35 @@
 
 
 @*<div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-        Choisir le Mois
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-        <li selected="selected">
-            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 1 })">Janvier</a>
-        </li>
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            Choisir le Mois
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li selected="selected">
+                <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 1 })">Janvier</a>
+            </li>
 
-        <li>
-            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 2 })">Février</a>
-        </li>
-        <li>
-            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 3 })">Mars</a>
-        </li>
-        <li>
-            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 4 })">Avril</a>
-        </li>
-        <li>
-            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 5 })">Mais</a>
-        </li>
-        <li>
-            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 6 })">Juin</a>
-        </li>
-        <li>
-            <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 7 })">Juillet</a>
-        </li>
-    </ul>
-</div>*@
+            <li>
+                <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 2 })">Février</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 3 })">Mars</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 4 })">Avril</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 5 })">Mais</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 6 })">Juin</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "PRESENCEs", new {id= ViewBag.id,NB = 7 })">Juillet</a>
+            </li>
+        </ul>
+    </div>*@
 
 
 <p>
@@ -524,78 +524,123 @@
 
 </p>
 @*Model.First().COURS.LIBELLE != null &&*@
-
-<div style="float:left;" id="div2">
-
-    <table class="table table-striped">
-        <thead>
-            <tr>
-
-                <th scope="col">Nom</th>
-                <th scope="col">Semaine 1</th>
-                <th scope="col">Semaine 2</th>
-                <th scope="col">Semaine 3</th>
-                <th scope="col">Semaine 4</th>
-                <th scope="col">Désinscrir</th>
-            </tr>
-        </thead>
-        <style>
-            .table td {
-                width: 20%;
-            }
-        </style>
-
-        @foreach (var Nom in ViewBag.Matiere)
-        {
-            var P = Model.Where(p => p.INDIVIDU.NOM == @Nom);
-            int count = 0;
-            <tr>
-                <td>
-                    @Nom
-
-                </td>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 
 
-                @foreach (var item in P)
-                {
-                    count++;
+@if (!Model.Any())
+{
+    <tr><td colspan="4">Aucun élève n'est inscrit a ce cour</td></tr>
+    <script type="text/javascript">
+            window.onload = function () {
+                //alert("Aucun élève n'est inscrit a ce cour");
+                swal({
+  title: "Aucun élève inscrit !!",
+  text: "Ajouter un élève ?",
+  type: "warning",
+  showCancelButton: true,
+  confirmButtonClass: "btn-danger",
+  confirmButtonText: "Oui",
+  cancelButtonText: "NON",
+  closeOnConfirm: false,
+  closeOnCancel: false
+},
+function(isConfirm) {
+  if (isConfirm) {
+      //swal("Deleted!", "Your imaginary file has been deleted.", "success");
+      window.location.href = '@Url.Action("CreateapartirMatiere", "INSCRIPTIONs",new { id = ViewBag.id,libele = @ViewBag.ThisMatiere })';
 
+  } else {
+    //swal("Cancelled", "Your imaginary file is safe :)", "error");
+     window.location.href = '@Url.Action("Index", "COURS")';
+
+  }
+});
+   
+            };
+    </script>
+}
+
+
+
+
+else
+{
+
+    <div style="float:left;" id="div2">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+
+                    <th scope="col">Nom</th>
+                    <th scope="col">Semaine 1</th>
+                    <th scope="col">Semaine 2</th>
+                    <th scope="col">Semaine 3</th>
+                    <th scope="col">Semaine 4</th>
+                    <th scope="col">Désinscrir</th>
+                </tr>
+            </thead>
+            <style>
+                .table td {
+                    width: 20%;
+                }
+            </style>
+
+            @foreach (var Nom in ViewBag.Matiere)
+            {
+                var P = Model.Where(p => p.INDIVIDU.NOM == @Nom);
+                int count = 0;
+
+
+
+                <tr>
                     <td>
-
-
-                        @if (item.PRESENT == true)
-                        {
-                            <button data-id="@item.ID" data-propertyname="PRESENT2" type="button" class="editSelect btn btn-success">Présent</button>
-                        }
-                        else
-                        {
-                            <button data-id="@item.ID" data-propertyname="PRESENT2" type="button" class="editSelect btn btn-danger">Absent</button>
-                        }
+                        @Nom
 
                     </td>
-                    if (count == 4)
-                    {
 
-                        <td id="@item.ID_ELEVE">
-                            @*<button data-id="@item.ID_ELEVE" data-propertyname="@item.ID_COURS" type="button" class="Proc btn btn-danger">Désinscrir de la matière</button>*@
-                            @*@Html.ActionLink("Désinscrir de la matière", "Proc", "PRESENCEs", new { id_matiere = @item.ID_COURS, id_eleve = @item.ID_ELEVE }, new { @class = "btn btn-danger" })*@
-                            <a href='#' class='btn btn-danger' onclick='DeleteStudentRecord(@item.ID_COURS,@item.ID_ELEVE)'><span class='glyphicon glyphicon-trash'></span></a>
+
+                    @foreach (var item in P)
+                    {
+                        count++;
+
+                        <td>
+
+
+                            @if (item.PRESENT == true)
+                            {
+                                <button data-id="@item.ID" data-propertyname="PRESENT2" type="button" class="editSelect btn btn-success">Présent</button>
+                            }
+                            else
+                            {
+                                <button data-id="@item.ID" data-propertyname="PRESENT2" type="button" class="editSelect btn btn-danger">Absent</button>
+                            }
 
                         </td>
+                        if (count == 4)
+                        {
+
+                            <td id="@item.ID_ELEVE">
+                                @*<button data-id="@item.ID_ELEVE" data-propertyname="@item.ID_COURS" type="button" class="Proc btn btn-danger">Désinscrir de la matière</button>*@
+                                @*@Html.ActionLink("Désinscrir de la matière", "Proc", "PRESENCEs", new { id_matiere = @item.ID_COURS, id_eleve = @item.ID_ELEVE }, new { @class = "btn btn-danger" })*@
+                                <a href='#' class='btn btn-danger' onclick='DeleteStudentRecord(@item.ID_COURS,@item.ID_ELEVE)'><span class='glyphicon glyphicon-trash'></span></a>
+
+                            </td>
+
+                        }
 
                     }
 
-                }
-
-            </tr>
+                </tr>
 
 
-        }
+            }
 
-    </table>
-</div>
+        </table>
+    </div>
 
-
+}
 @*@foreach (var item in ViewBag.Matiere)
 
     {

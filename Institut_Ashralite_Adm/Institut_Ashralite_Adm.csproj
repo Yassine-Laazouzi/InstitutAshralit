@@ -410,6 +410,7 @@
     <Content Include="Scripts\webfonts\fa-solid-900.woff" />
     <Content Include="Scripts\webfonts\fa-solid-900.woff2" />
     <Content Include="Views\Logins\Login.cshtml" />
+    <Content Include="Views\INDIVIDUs\Eleve.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -11,114 +11,114 @@
 </head>
 <body>
     <p>
-        @Html.ActionLink("Ajouter un professeur", "Create", new { id = 1, titre = "Ajouter un professeur" },new { @class = "btn btn-success" })
+        @*@Html.ActionLink("Ajouter un professeur", "Create", new { id = 1, titre = "Ajouter un professeur" }, new { @class = "btn btn-success" })*@
         @*@Html.ActionLink("+ Ajouter un professeur", "Create", "INDIVIDUs", new { id = 1, titre = "Ajouter un professeur" }, new { @class = "btn btn-success", @style = "float: right;" })*@
         @*@Html.ActionLink("Ajouter un éléve", "CreateapartirMatiere", "INSCRIPTIONs", new { id = 2, titre = "Ajouter un eleve" }, new { @class = "btn btn-success" })*@
 
-        @Html.ActionLink("+Ajouter un eleve", "Create", new { id = 2, titre = "Ajouter un eleve" },new { @class = "btn btn-success" })
+        @Html.ActionLink("+Ajouter un eleve", "Create", new { id = 2, titre = "Ajouter un eleve" }, new { @class = "btn btn-success" })
 
     </p>
     @*<table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ID_METIER)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NOM)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PRENOM)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EMAIL)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PORTABLE)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.COMMENTAIRE)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ACTIF)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DATE_ACTIF)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UTILISATEUR_CREATION)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UTILISATEUR_MODIFICATION)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DATE_CREATION)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DATE_MODIFICATION)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SEMAINE)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.REF_CIVILITE.ABBREVIATION)
-            </th>
-            <th></th>
-        </tr>
-
-        @foreach (var item in Model)
-        {
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ID_METIER)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.NOM)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.PRENOM)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.EMAIL)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.PORTABLE)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.COMMENTAIRE)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ACTIF)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DATE_ACTIF)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.UTILISATEUR_CREATION)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.UTILISATEUR_MODIFICATION)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DATE_CREATION)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DATE_MODIFICATION)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.SEMAINE)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.REF_CIVILITE.ABBREVIATION)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID_METIER)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NOM)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PRENOM)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EMAIL)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PORTABLE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.COMMENTAIRE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ACTIF)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DATE_ACTIF)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UTILISATEUR_CREATION)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UTILISATEUR_MODIFICATION)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DATE_CREATION)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DATE_MODIFICATION)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SEMAINE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.REF_CIVILITE.ABBREVIATION)
+                </th>
+                <th></th>
             </tr>
-        }
 
-    </table>*@
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID_METIER)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NOM)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PRENOM)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EMAIL)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PORTABLE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.COMMENTAIRE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ACTIF)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DATE_ACTIF)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UTILISATEUR_CREATION)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UTILISATEUR_MODIFICATION)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DATE_CREATION)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DATE_MODIFICATION)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SEMAINE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.REF_CIVILITE.ABBREVIATION)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                    </td>
+                </tr>
+            }
+
+        </table>*@
 </body>
 </html>
 
@@ -164,7 +164,7 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="container">
+@*<div class="container">
     <h3>Professeurs de l'institut</h3>
     <hr>
     <div class="row">
@@ -178,7 +178,7 @@
             <table class="table">
                 <thead>
                     <tr class="filters">
-                        @*<th><input type="text" class="form-control" placeholder="#" disabled></th>*@
+                        <th><input type="text" class="form-control" placeholder="#" disabled></th>
                         <th><input type="text" class="form-control" placeholder="NOM" disabled></th>
                         <th><input type="text" class="form-control" placeholder="PRENOM" disabled></th>
                         <th><input type="text" class="form-control" placeholder="EMAIL" disabled></th>
@@ -189,106 +189,26 @@
                 <tbody>
                     @foreach (var item in ViewData["COURS"] as IList<Institut_Ashralite_Adm.Models.COURS>)
                     {
-                    <tr>
-                        @*<td>
-            @Html.DisplayFor(modelItem => item.ID_METIER)
-        </td>*@
-                        <td>
-                            @Html.DisplayFor(modelItem => item.INDIVIDU.NOM)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.INDIVIDU.PRENOM)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.INDIVIDU.EMAIL)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.INDIVIDU.PORTABLE)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.LIBELLE)
-                        </td>
-
-                        @*<td>
-            @Html.DisplayFor(modelItem => item.COMMENTAIRE)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ACTIF)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DATE_ACTIF)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UTILISATEUR_CREATION)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UTILISATEUR_MODIFICATION)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DATE_CREATION)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DATE_MODIFICATION)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SEMAINE)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.REF_CIVILITE.ABBREVIATION)
-        </td>*@
-                        <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-                        </td>
-                    </tr>
-                    }
-
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-@*<div class="container">
-    <h3>Eleves de l'institut</h3>
-    <hr>
-    <div class="row">
-        <div class="panel panel-primary filterable">
-            <div class="panel-heading">
-                <h3 class="panel-title">Eleves</h3>
-                <div class="pull-right">
-                    <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Recherche</button>
-                </div>
-            </div>
-            <table class="table">
-                <thead>
-                    <tr class="filters">
-                        <th><input type="text" class="form-control" placeholder="#" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="NOM" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="PRENOM" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="EMAIL" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="Telephone" disabled></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model.Where(m => m.ID_METIER == 2))
-                    {
                         <tr>
                             <td>
                                     @Html.DisplayFor(modelItem => item.ID_METIER)
                                 </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.NOM)
+                                @Html.DisplayFor(modelItem => item.INDIVIDU.NOM)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.PRENOM)
+                                @Html.DisplayFor(modelItem => item.INDIVIDU.PRENOM)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.EMAIL)
+                                @Html.DisplayFor(modelItem => item.INDIVIDU.EMAIL)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.PORTABLE)
+                                @Html.DisplayFor(modelItem => item.INDIVIDU.PORTABLE)
                             </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LIBELLE)
+                            </td>
+
                             <td>
                                     @Html.DisplayFor(modelItem => item.COMMENTAIRE)
                                 </td>
@@ -329,23 +249,86 @@
         </div>
     </div>
 </div>*@
+<div class="container">
+    <h3>Eleves de l'institut</h3>
+    <hr>
+    <div class="row">
+        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Eleves</h3>
+                <div class="pull-right">
+                    <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Recherche</button>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr class="filters">
+                        @*<th><input type="text" class="form-control" placeholder="#" disabled></th>*@
+                        <th><input type="text" class="form-control" placeholder="NOM" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="PRENOM" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="EMAIL" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Telephone" disabled></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Where(m => m.ID_METIER == 2))
+                    {
+                        <tr>
+                            @*<td>
+                                    @Html.DisplayFor(modelItem => item.ID_METIER)
+                                </td>*@
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NOM)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PRENOM)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EMAIL)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PORTABLE)
+                            </td>
+                            @*<td>
+                                    @Html.DisplayFor(modelItem => item.COMMENTAIRE)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ACTIF)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DATE_ACTIF)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UTILISATEUR_CREATION)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UTILISATEUR_MODIFICATION)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DATE_CREATION)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DATE_MODIFICATION)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.SEMAINE)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.REF_CIVILITE.ABBREVIATION)
+                                </td>*@
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                            </td>
+                        </tr>
+                    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
 <script type="text/javascript">
     /*

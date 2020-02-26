@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mon application ASP.NET</title>
@@ -23,31 +23,31 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Accueil", "Index", "Home")</li>
-                    <li>@Html.ActionLink("À propos de", "About", "Home")</li>
+                    @*<li>@Html.ActionLink("À propos de", "About", "Home")</li>
                     <li>@Html.ActionLink("COURS", "Index", "COURS")</li>
                     <li>@Html.ActionLink("Prof & Eleve", "Index", "INDIVIDUs")</li>
-                    <li>@Html.ActionLink("connexion", "AA", "Account")</li>
+                    <li>@Html.ActionLink("connexion", "AA", "Account")</li>*@
 
                     @*<li>@Html.ActionLink("INSCRIPTIONs", "Index", "INSCRIPTIONs")</li>
-        <li>@Html.ActionLink("MATIEREs", "Index", "MATIEREs")</li>
-        <li>@Html.ActionLink("PRESENCEs", "Index", "PRESENCEs")</li>*@
+                        <li>@Html.ActionLink("MATIEREs", "Index", "MATIEREs")</li>
+                        <li>@Html.ActionLink("PRESENCEs", "Index", "PRESENCEs")</li>*@
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
-        
+
     <div class="container body-content">
         <hr />
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mon application ASP.NET</p>
-        </footer>
+        @*<footer style="position: absolute; bottom: 0"}">
+            <p>&copy; @DateTime.Now.Year - Institut Asharite</p>
+        </footer>*@
     </div>
 
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

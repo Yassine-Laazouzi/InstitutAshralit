@@ -25,6 +25,18 @@ namespace Institut_Ashralite_Adm.Controllers
             return View(iNDIVIDU.ToList());
         }
 
+        public ActionResult Eleve()
+        {
+            var iNDIVIDU = db.INDIVIDU.Include(i => i.REF_CIVILITE);
+
+
+            ViewData["COURS"] = db.COURS.Include(c => c.INDIVIDU).Include(c => c.MATIERE).ToList();
+
+            return View(iNDIVIDU.ToList());
+
+            //return View(iNDIVIDU.ToList());
+        }
+
         // GET: INDIVIDUs/Details/5
         public ActionResult Details(int? id)
         {
