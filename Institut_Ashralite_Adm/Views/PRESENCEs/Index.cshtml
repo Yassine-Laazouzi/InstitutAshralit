@@ -643,10 +643,10 @@ else
 }
 @*@foreach (var item in ViewBag.Matiere)
 
-    {
+{
 
-        @item
-    }*@
+       @item
+}*@
 
 
 @*foreach (var Matiere in ViewData["Matiere"] as IList<WebApplication6.Models.INSCRIPTION>
@@ -655,5 +655,4 @@ else
     <li> @Html.ActionLink(Matiere.ABBREVIATION, "ParMatiere", "INSCRIPTIONs", new { M = Matiere.ID }, new { @class = "btn btn-primary", @style = "color:white" }) </li>
 
     <li> @Html.DisplayFor(modelItem => Matiere.INDIVIDU.NOM)</li>
-
-        }*@
+}*@

@@ -1,0 +1,18 @@
+**créé un dossier***
+mkdir Git
+
+1) Initialiser Git
+ $: git init
+
+2) Configuration
+  $: git config --global user.email "yassine.laazouzi@hotmail.fr"
+   Pour voir les config  ==> git config --global color.ui true
+
+3)
+git statut 
+git add * .cshtml
+git commit -m "commentaire"
+----------------------------------------
+Les Branches
+
+git branche redesign
